@@ -6,9 +6,9 @@
 #include <set>
 #include <vector>
 
-#include "arista.h"
-#include "punto.h"
-#include "triangulo.h"
+#include "../include/arista.h"
+#include "../include/punto.h"
+#include "../include/triangulo.h"
 
 using namespace std;
 
@@ -203,7 +203,7 @@ void actividad8() {
   vector<int> tamanios = {50, 100, 150, 200, 250};
   cout << "\n=== ACTIVIDAD 8: MEDICIÓN DE TIEMPOS ===\n";
   for (int n : tamanios) {
-    string nombreArchivo = "puntos_" + to_string(n) + ".txt";
+    string nombreArchivo = "data/puntos_" + to_string(n) + ".txt";
     ifstream archivo(nombreArchivo);
     if (!archivo.is_open()) {
       cout << "No se encontró " << nombreArchivo << ". Simulando con " << n
@@ -231,7 +231,7 @@ void actividad8() {
 
 int main() {
   vector<Punto> puntos;
-  ifstream archivo("puntos.txt");
+  ifstream archivo("data/puntos.txt");
   if (!archivo.is_open()) {
     cerr << "Error: no se pudo abrir puntos.txt. Usando puntos de ejemplo.\n";
     puntos = {Punto(10, 20), Punto(35, 42), Punto(70, 11), Punto(15, 60),
