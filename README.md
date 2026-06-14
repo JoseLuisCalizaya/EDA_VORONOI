@@ -7,7 +7,7 @@
 Clona el proyecto en tu máquina local y entra al directorio:
 
 ```bash
-git clone <URL_DE_TU_REPOSITORIO>
+git clone https://github.com/JoseLuisCalizaya/EDA_VORONOI.git
 cd EDA_VORONOI
 ```
 
